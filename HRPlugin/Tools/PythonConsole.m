@@ -272,7 +272,7 @@ sys.stderr = console\n\
     //http://hi.baidu.com/all3g/item/09f3d6f8d3e7c428753c4cfc
     NSString* localUrl = [PythonConsole getGitConfig];
     if(localUrl != nil){
-        NSString* command = [NSString stringWithFormat:@"print(os.popen('cd \"%@\";git commit -m  \"%@\" \"%@\"').read().replace('#', ''))", localUrl, log, localUrl];
+        NSString* command = [NSString stringWithFormat:@"print(os.popen('cd \"%@\";git commit -m  \"%@\" \"%@\";git push origin master').read().replace('#', ''))", localUrl, log, localUrl];
         [PythonConsole showMessage:[PythonConsole RunConsole:command]];
     }
 }
