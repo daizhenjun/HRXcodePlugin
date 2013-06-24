@@ -280,7 +280,7 @@ sys.stderr = console\n\
 +(void) GitPull{
     NSString* localUrl = [PythonConsole getGitConfig];
     if(localUrl != nil){
-        NSString* command = [NSString stringWithFormat:@"print(os.popen('cd \"%@\";git pull \"%@\"').read().replace('#', ''))", localUrl, localUrl];
+        NSString* command = [NSString stringWithFormat:@"print(os.popen('cd \"%@\";git pull origin master').read().replace('#', ''))", localUrl];
         [PythonConsole showMessage:[PythonConsole RunConsole:command]];
     }
 }
