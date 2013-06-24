@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6901610B1762D270003EB17B /* AboutPluginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690160FA1762D270003EB17B /* AboutPluginController.m */; };
+		6901610C1762D270003EB17B /* AboutPluginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690160FB1762D270003EB17B /* AboutPluginController.xib */; };
+		6901610D1762D270003EB17B /* CommitWithLogController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690160FD1762D270003EB17B /* CommitWithLogController.m */; };
+		6901610E1762D270003EB17B /* CommitWithLogController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690160FE1762D270003EB17B /* CommitWithLogController.xib */; };
+		6901610F1762D270003EB17B /* ConfigController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690161001762D270003EB17B /* ConfigController.m */; };
+		690161101762D270003EB17B /* ConfigController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690161011762D270003EB17B /* ConfigController.xib */; };
+		690161111762D270003EB17B /* RegexController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690161031762D270003EB17B /* RegexController.m */; };
+		690161121762D270003EB17B /* RegexController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690161041762D270003EB17B /* RegexController.xib */; };
+		690161131762D270003EB17B /* ReplaceContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 690161061762D270003EB17B /* ReplaceContent.m */; };
+		690161141762D270003EB17B /* ReplaceContent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690161071762D270003EB17B /* ReplaceContent.xib */; };
+		690161151762D270003EB17B /* SqliteController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690161091762D270003EB17B /* SqliteController.mm */; };
+		690161161762D270003EB17B /* SqliteController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6901610A1762D270003EB17B /* SqliteController.xib */; };
+		690161291762D287003EB17B /* CodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 690161191762D287003EB17B /* CodeGenerator.m */; };
+		6901612B1762D287003EB17B /* DZTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6901611E1762D287003EB17B /* DZTools.m */; };
+		6901612E1762D287003EB17B /* PythonConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 690161241762D287003EB17B /* PythonConsole.m */; };
+		6901612F1762D287003EB17B /* Serializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 690161261762D287003EB17B /* Serializer.m */; };
+		690161301762D287003EB17B /* SQLiteHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 690161271762D287003EB17B /* SQLiteHelper.cpp */; };
+		690F58DE17641C580096AEE0 /* NSMenuBlockActionExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 690F58DD17641C580096AEE0 /* NSMenuBlockActionExtension.m */; };
+		691392441762D32D00170D08 /* MethodSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 691392411762D32D00170D08 /* MethodSwizzle.m */; };
+		691392451762D32D00170D08 /* NSView+Dumping.m in Sources */ = {isa = PBXBuildFile; fileRef = 691392431762D32D00170D08 /* NSView+Dumping.m */; };
+		692BF45E176AD73900F44A2D /* baidu_test.py in Resources */ = {isa = PBXBuildFile; fileRef = 692BF459176AD73900F44A2D /* baidu_test.py */; };
+		692BF45F176AD73900F44A2D /* HttpProxyController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 692BF45B176AD73900F44A2D /* HttpProxyController.mm */; };
+		692BF460176AD73900F44A2D /* HttpProxyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 692BF45C176AD73900F44A2D /* HttpProxyController.xib */; };
+		692BF461176AD73900F44A2D /* ProxyHTTPServer.py in Resources */ = {isa = PBXBuildFile; fileRef = 692BF45D176AD73900F44A2D /* ProxyHTTPServer.py */; };
+		6951DBE5175878A200EF3136 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6951DBE11758779500EF3136 /* Python.framework */; };
+		69799BC017782F7400CE73FC /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 69799BBF17782F7400CE73FC /* Readme.md */; };
+		69898CC01762D34900AEBE32 /* DVTTextCompletionController+PluginDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 69898CBF1762D34900AEBE32 /* DVTTextCompletionController+PluginDemo.m */; };
+		69A5D33C175DE6CC0020FBF9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A5D338175DE59E0020FBF9 /* libsqlite3.dylib */; };
+		69B5821117572826005357CB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B5821017572826005357CB /* CoreFoundation.framework */; };
+		D1A8430C16BC1CA30071C42F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D1A8430A16BC1CA30071C42F /* InfoPlist.strings */; };
+		D1A8431816BCAEBA0071C42F /* HRPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A8431716BCAEBA0071C42F /* HRPlugin.m */; };
+		D1AD53E116BCB39F007DAB2F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AD53E016BCB39F007DAB2F /* Cocoa.framework */; };
+		D1AD53E316BCB3BC007DAB2F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AD53E216BCB3BC007DAB2F /* CoreData.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		690160F91762D270003EB17B /* AboutPluginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutPluginController.h; sourceTree = "<group>"; };
+		690160FA1762D270003EB17B /* AboutPluginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutPluginController.m; sourceTree = "<group>"; };
+		690160FB1762D270003EB17B /* AboutPluginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutPluginController.xib; sourceTree = "<group>"; };
+		690160FC1762D270003EB17B /* CommitWithLogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommitWithLogController.h; sourceTree = "<group>"; };
+		690160FD1762D270003EB17B /* CommitWithLogController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommitWithLogController.m; sourceTree = "<group>"; };
+		690160FE1762D270003EB17B /* CommitWithLogController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommitWithLogController.xib; sourceTree = "<group>"; };
+		690160FF1762D270003EB17B /* ConfigController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigController.h; sourceTree = "<group>"; };
+		690161001762D270003EB17B /* ConfigController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigController.m; sourceTree = "<group>"; };
+		690161011762D270003EB17B /* ConfigController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigController.xib; sourceTree = "<group>"; };
+		690161021762D270003EB17B /* RegexController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexController.h; sourceTree = "<group>"; };
+		690161031762D270003EB17B /* RegexController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexController.m; sourceTree = "<group>"; };
+		690161041762D270003EB17B /* RegexController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegexController.xib; sourceTree = "<group>"; };
+		690161051762D270003EB17B /* ReplaceContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplaceContent.h; sourceTree = "<group>"; };
+		690161061762D270003EB17B /* ReplaceContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplaceContent.m; sourceTree = "<group>"; };
+		690161071762D270003EB17B /* ReplaceContent.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReplaceContent.xib; sourceTree = "<group>"; };
+		690161081762D270003EB17B /* SqliteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqliteController.h; sourceTree = "<group>"; };
+		690161091762D270003EB17B /* SqliteController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SqliteController.mm; sourceTree = "<group>"; };
+		6901610A1762D270003EB17B /* SqliteController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SqliteController.xib; sourceTree = "<group>"; };
+		690161181762D287003EB17B /* CodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeGenerator.h; sourceTree = "<group>"; };
+		690161191762D287003EB17B /* CodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeGenerator.m; sourceTree = "<group>"; };
+		6901611A1762D287003EB17B /* DBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHelper.h; sourceTree = "<group>"; };
+		6901611D1762D287003EB17B /* DZTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZTools.h; sourceTree = "<group>"; };
+		6901611E1762D287003EB17B /* DZTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZTools.m; sourceTree = "<group>"; };
+		690161231762D287003EB17B /* PythonConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PythonConsole.h; sourceTree = "<group>"; };
+		690161241762D287003EB17B /* PythonConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PythonConsole.m; sourceTree = "<group>"; };
+		690161251762D287003EB17B /* Serializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Serializer.h; sourceTree = "<group>"; };
+		690161261762D287003EB17B /* Serializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Serializer.m; sourceTree = "<group>"; };
+		690161271762D287003EB17B /* SQLiteHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SQLiteHelper.cpp; sourceTree = "<group>"; };
+		690161281762D287003EB17B /* SQLiteHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteHelper.h; sourceTree = "<group>"; };
+		690F58DC17641C580096AEE0 /* NSMenuBlockActionExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMenuBlockActionExtension.h; sourceTree = "<group>"; };
+		690F58DD17641C580096AEE0 /* NSMenuBlockActionExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMenuBlockActionExtension.m; sourceTree = "<group>"; };
+		691392401762D32D00170D08 /* MethodSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzle.h; sourceTree = "<group>"; };
+		691392411762D32D00170D08 /* MethodSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzle.m; sourceTree = "<group>"; };
+		691392421762D32D00170D08 /* NSView+Dumping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+Dumping.h"; sourceTree = "<group>"; };
+		691392431762D32D00170D08 /* NSView+Dumping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+Dumping.m"; sourceTree = "<group>"; };
+		692BF459176AD73900F44A2D /* baidu_test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = baidu_test.py; sourceTree = "<group>"; };
+		692BF45A176AD73900F44A2D /* HttpProxyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpProxyController.h; sourceTree = "<group>"; };
+		692BF45B176AD73900F44A2D /* HttpProxyController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HttpProxyController.mm; sourceTree = "<group>"; };
+		692BF45C176AD73900F44A2D /* HttpProxyController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HttpProxyController.xib; sourceTree = "<group>"; };
+		692BF45D176AD73900F44A2D /* ProxyHTTPServer.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ProxyHTTPServer.py; sourceTree = "<group>"; };
+		6951DBE11758779500EF3136 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
+		6951DBE3175877EC00EF3136 /* libpython2.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpython2.7.dylib; path = usr/lib/libpython2.7.dylib; sourceTree = SDKROOT; };
+		69799BBF17782F7400CE73FC /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.md; sourceTree = "<group>"; };
+		69898CBE1762D34900AEBE32 /* DVTTextCompletionController+PluginDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTTextCompletionController+PluginDemo.h"; sourceTree = "<group>"; };
+		69898CBF1762D34900AEBE32 /* DVTTextCompletionController+PluginDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DVTTextCompletionController+PluginDemo.m"; sourceTree = "<group>"; };
+		69A5D338175DE59E0020FBF9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		69B5821017572826005357CB /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D1A842FE16BC1CA30071C42F /* HRXCodePlugin.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HRXCodePlugin.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1A8430416BC1CA30071C42F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D1A8430616BC1CA30071C42F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D1A8430916BC1CA30071C42F /* HRXCodePlugin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HRXCodePlugin-Info.plist"; sourceTree = "<group>"; };
+		D1A8430B16BC1CA30071C42F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D1A8430D16BC1CA30071C42F /* HRXCodePlugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HRXCodePlugin-Prefix.pch"; sourceTree = "<group>"; };
+		D1A8431616BCAEBA0071C42F /* HRPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRPlugin.h; sourceTree = "<group>"; };
+		D1A8431716BCAEBA0071C42F /* HRPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRPlugin.m; sourceTree = "<group>"; };
+		D1AD53E016BCB39F007DAB2F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D1AD53E216BCB3BC007DAB2F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D1B83DD916BD089200A812F5 /* PrivateHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateHeader.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1A842FB16BC1CA30071C42F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69A5D33C175DE6CC0020FBF9 /* libsqlite3.dylib in Frameworks */,
+				6951DBE5175878A200EF3136 /* Python.framework in Frameworks */,
+				69B5821117572826005357CB /* CoreFoundation.framework in Frameworks */,
+				D1AD53E316BCB3BC007DAB2F /* CoreData.framework in Frameworks */,
+				D1AD53E116BCB39F007DAB2F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		690160F81762D270003EB17B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				692BF459176AD73900F44A2D /* baidu_test.py */,
+				692BF45A176AD73900F44A2D /* HttpProxyController.h */,
+				692BF45B176AD73900F44A2D /* HttpProxyController.mm */,
+				692BF45C176AD73900F44A2D /* HttpProxyController.xib */,
+				692BF45D176AD73900F44A2D /* ProxyHTTPServer.py */,
+				690160F91762D270003EB17B /* AboutPluginController.h */,
+				690160FA1762D270003EB17B /* AboutPluginController.m */,
+				690160FB1762D270003EB17B /* AboutPluginController.xib */,
+				690160FC1762D270003EB17B /* CommitWithLogController.h */,
+				690160FD1762D270003EB17B /* CommitWithLogController.m */,
+				690160FE1762D270003EB17B /* CommitWithLogController.xib */,
+				690160FF1762D270003EB17B /* ConfigController.h */,
+				690161001762D270003EB17B /* ConfigController.m */,
+				690161011762D270003EB17B /* ConfigController.xib */,
+				690161021762D270003EB17B /* RegexController.h */,
+				690161031762D270003EB17B /* RegexController.m */,
+				690161041762D270003EB17B /* RegexController.xib */,
+				690161051762D270003EB17B /* ReplaceContent.h */,
+				690161061762D270003EB17B /* ReplaceContent.m */,
+				690161071762D270003EB17B /* ReplaceContent.xib */,
+				690161081762D270003EB17B /* SqliteController.h */,
+				690161091762D270003EB17B /* SqliteController.mm */,
+				6901610A1762D270003EB17B /* SqliteController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		690161171762D287003EB17B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				69898CBE1762D34900AEBE32 /* DVTTextCompletionController+PluginDemo.h */,
+				69898CBF1762D34900AEBE32 /* DVTTextCompletionController+PluginDemo.m */,
+				691392401762D32D00170D08 /* MethodSwizzle.h */,
+				691392411762D32D00170D08 /* MethodSwizzle.m */,
+				691392421762D32D00170D08 /* NSView+Dumping.h */,
+				691392431762D32D00170D08 /* NSView+Dumping.m */,
+				690161181762D287003EB17B /* CodeGenerator.h */,
+				690161191762D287003EB17B /* CodeGenerator.m */,
+				6901611A1762D287003EB17B /* DBHelper.h */,
+				6901611D1762D287003EB17B /* DZTools.h */,
+				6901611E1762D287003EB17B /* DZTools.m */,
+				690161231762D287003EB17B /* PythonConsole.h */,
+				690161241762D287003EB17B /* PythonConsole.m */,
+				690161251762D287003EB17B /* Serializer.h */,
+				690161261762D287003EB17B /* Serializer.m */,
+				690161271762D287003EB17B /* SQLiteHelper.cpp */,
+				690161281762D287003EB17B /* SQLiteHelper.h */,
+				690F58DC17641C580096AEE0 /* NSMenuBlockActionExtension.h */,
+				690F58DD17641C580096AEE0 /* NSMenuBlockActionExtension.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		D1A842F516BC1CA30071C42F = {
+			isa = PBXGroup;
+			children = (
+				69799BBF17782F7400CE73FC /* Readme.md */,
+				69A5D338175DE59E0020FBF9 /* libsqlite3.dylib */,
+				6951DBE3175877EC00EF3136 /* libpython2.7.dylib */,
+				6951DBE11758779500EF3136 /* Python.framework */,
+				69B5821017572826005357CB /* CoreFoundation.framework */,
+				D1A8430716BC1CA30071C42F /* HRPlugin */,
+				D1A8430016BC1CA30071C42F /* Frameworks */,
+				D1A842FF16BC1CA30071C42F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D1A842FF16BC1CA30071C42F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1A842FE16BC1CA30071C42F /* HRXCodePlugin.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1A8430016BC1CA30071C42F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1AD53E016BCB39F007DAB2F /* Cocoa.framework */,
+				D1A8430316BC1CA30071C42F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1A8430316BC1CA30071C42F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1AD53E216BCB3BC007DAB2F /* CoreData.framework */,
+				D1A8430416BC1CA30071C42F /* AppKit.framework */,
+				D1A8430616BC1CA30071C42F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D1A8430716BC1CA30071C42F /* HRPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				690161171762D287003EB17B /* Tools */,
+				690160F81762D270003EB17B /* Controllers */,
+				D1A8430816BC1CA30071C42F /* Supporting Files */,
+				D1A8431616BCAEBA0071C42F /* HRPlugin.h */,
+				D1A8431716BCAEBA0071C42F /* HRPlugin.m */,
+				D1B83DD916BD089200A812F5 /* PrivateHeader.h */,
+			);
+			path = HRPlugin;
+			sourceTree = "<group>";
+		};
+		D1A8430816BC1CA30071C42F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1A8430916BC1CA30071C42F /* HRXCodePlugin-Info.plist */,
+				D1A8430A16BC1CA30071C42F /* InfoPlist.strings */,
+				D1A8430D16BC1CA30071C42F /* HRXCodePlugin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1A842FD16BC1CA30071C42F /* HRXCodePlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1A8431016BC1CA30071C42F /* Build configuration list for PBXNativeTarget "HRXCodePlugin" */;
+			buildPhases = (
+				D1A842FA16BC1CA30071C42F /* Sources */,
+				D1A842FB16BC1CA30071C42F /* Frameworks */,
+				D1A842FC16BC1CA30071C42F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HRXCodePlugin;
+			productName = HRXCodePlugin;
+			productReference = D1A842FE16BC1CA30071C42F /* HRXCodePlugin.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1A842F616BC1CA30071C42F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "OneV's Den";
+			};
+			buildConfigurationList = D1A842F916BC1CA30071C42F /* Build configuration list for PBXProject "HRXCodePlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D1A842F516BC1CA30071C42F;
+			productRefGroup = D1A842FF16BC1CA30071C42F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1A842FD16BC1CA30071C42F /* HRXCodePlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1A842FC16BC1CA30071C42F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1A8430C16BC1CA30071C42F /* InfoPlist.strings in Resources */,
+				6901610C1762D270003EB17B /* AboutPluginController.xib in Resources */,
+				6901610E1762D270003EB17B /* CommitWithLogController.xib in Resources */,
+				690161101762D270003EB17B /* ConfigController.xib in Resources */,
+				690161121762D270003EB17B /* RegexController.xib in Resources */,
+				690161141762D270003EB17B /* ReplaceContent.xib in Resources */,
+				690161161762D270003EB17B /* SqliteController.xib in Resources */,
+				692BF45E176AD73900F44A2D /* baidu_test.py in Resources */,
+				692BF460176AD73900F44A2D /* HttpProxyController.xib in Resources */,
+				692BF461176AD73900F44A2D /* ProxyHTTPServer.py in Resources */,
+				69799BC017782F7400CE73FC /* Readme.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1A842FA16BC1CA30071C42F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1A8431816BCAEBA0071C42F /* HRPlugin.m in Sources */,
+				6901610B1762D270003EB17B /* AboutPluginController.m in Sources */,
+				6901610D1762D270003EB17B /* CommitWithLogController.m in Sources */,
+				6901610F1762D270003EB17B /* ConfigController.m in Sources */,
+				690161111762D270003EB17B /* RegexController.m in Sources */,
+				690161131762D270003EB17B /* ReplaceContent.m in Sources */,
+				690161151762D270003EB17B /* SqliteController.mm in Sources */,
+				690161291762D287003EB17B /* CodeGenerator.m in Sources */,
+				6901612B1762D287003EB17B /* DZTools.m in Sources */,
+				6901612E1762D287003EB17B /* PythonConsole.m in Sources */,
+				6901612F1762D287003EB17B /* Serializer.m in Sources */,
+				690161301762D287003EB17B /* SQLiteHelper.cpp in Sources */,
+				691392441762D32D00170D08 /* MethodSwizzle.m in Sources */,
+				691392451762D32D00170D08 /* NSView+Dumping.m in Sources */,
+				69898CC01762D34900AEBE32 /* DVTTextCompletionController+PluginDemo.m in Sources */,
+				690F58DE17641C580096AEE0 /* NSMenuBlockActionExtension.m in Sources */,
+				692BF45F176AD73900F44A2D /* HttpProxyController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D1A8430A16BC1CA30071C42F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1A8430B16BC1CA30071C42F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1A8430E16BC1CA30071C42F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D1A8430F16BC1CA30071C42F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D1A8431116BC1CA30071C42F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "${HOME}";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Desktop\"",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HRPlugin/HRXCodePlugin-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					/System/Library/Frameworks/Python.framework/Headers,
+					/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7,
+				);
+				INFOPLIST_FILE = "HRPlugin/HRXCodePlugin-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				PRODUCT_NAME = HRXCodePlugin;
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		D1A8431216BC1CA30071C42F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "${HOME}";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Desktop\"",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HRPlugin/HRXCodePlugin-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					/System/Library/Frameworks/Python.framework/Headers,
+					/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7,
+				);
+				INFOPLIST_FILE = "HRPlugin/HRXCodePlugin-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				PRODUCT_NAME = HRXCodePlugin;
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1A842F916BC1CA30071C42F /* Build configuration list for PBXProject "HRXCodePlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1A8430E16BC1CA30071C42F /* Debug */,
+				D1A8430F16BC1CA30071C42F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1A8431016BC1CA30071C42F /* Build configuration list for PBXNativeTarget "HRXCodePlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1A8431116BC1CA30071C42F /* Debug */,
+				D1A8431216BC1CA30071C42F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1A842F616BC1CA30071C42F /* Project object */;
+}
