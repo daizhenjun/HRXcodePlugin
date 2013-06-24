@@ -219,7 +219,7 @@ sys.stderr = console\n\
     //http://hi.baidu.com/all3g/item/09f3d6f8d3e7c428753c4cfc
     NSString* localUrl = [PythonConsole getSVNConfig];
     if(localUrl != nil){
-        NSString* command = [NSString stringWithFormat:@"print(subprocess.Popen(['svn', 'commit', '-m', '%@', '%@'],stdout=subprocess.PIPE, stdin=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True).communicate()[1].encode())", @"commit-files", localUrl];
+        NSString* command = [NSString stringWithFormat:@"print(subprocess.Popen(['svn', 'commit', '-m', '%@', '%@'],stdout=subprocess.PIPE, stdin=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True).communicate()[1].encode())", (log == NULL) ? @"commit-files" : log, localUrl];
         [PythonConsole showMessage:[PythonConsole RunConsole:command]];
     }
 }
@@ -272,7 +272,7 @@ sys.stderr = console\n\
     //http://hi.baidu.com/all3g/item/09f3d6f8d3e7c428753c4cfc
     NSString* localUrl = [PythonConsole getGitConfig];
     if(localUrl != nil){
-        NSString* command = [NSString stringWithFormat:@"print(os.popen('cd \"%@\";git commit -m  \"%@\" \"%@\";git push origin master').read().replace('#', ''))", localUrl, @"commit-files", localUrl];
+        NSString* command = [NSString stringWithFormat:@"print(os.popen('cd \"%@\";git commit -m  \"%@\" \"%@\";git push origin master').read().replace('#', ''))", localUrl, (log == NULL) ? @"commit-files" : log, localUrl];
         [PythonConsole showMessage:[PythonConsole RunConsole:command]];
     }
 }
