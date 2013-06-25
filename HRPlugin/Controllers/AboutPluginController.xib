@@ -163,7 +163,7 @@
 						<object class="NSTextField" id="1025366204">
 							<reference key="NSNextResponder" ref="1006"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{50, 8}, {366, 17}}</string>
+							<string key="NSFrame">{{50, 8}, {333, 17}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<reference key="NSWindow"/>
 							<string key="NSReuseIdentifierKey">_NS:1535</string>
@@ -171,7 +171,7 @@
 							<object class="NSTextFieldCell" key="NSCell" id="629397526">
 								<int key="NSCellFlags">68157504</int>
 								<int key="NSCellFlags2">272630784</int>
-								<string key="NSContents">源码: https://github.com/daizhenjun/HR-Plugin-For-XCode</string>
+								<string key="NSContents">源码: https://github.com/daizhenjun/HRXcodePlugin</string>
 								<reference key="NSSupport" ref="86527757"/>
 								<string key="NSCellIdentifier">_NS:1535</string>
 								<reference key="NSControlView" ref="1025366204"/>
