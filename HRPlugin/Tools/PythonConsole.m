@@ -267,7 +267,7 @@ sys.stderr = console\n\
     }
 }
 
-
+//http://www.cnblogs.com/daizhj/diary/2013/06/25/3154125.html
 +(void) GitCommit:(NSString*)log{
     //http://hi.baidu.com/all3g/item/09f3d6f8d3e7c428753c4cfc
     NSString* localUrl = [PythonConsole getGitConfig];
