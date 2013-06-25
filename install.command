@@ -1,15 +1,17 @@
 #!/bin/sh
 cd $(dirname "$0")
 
-#dire="/Users/""$USER""/Library/Application Support/Developer/Shared/Xcode/Plug-ins/"
-#if [ -d "$dire" ]; then
-#echo "$file exist!"
-#else
-#echo "$file not exist!"
-#mkdir -p "$dire" 
-#fi
+dire="/Users/""$USER""/Library/Application Support/Developer/Shared/Xcode/Plug-ins/"
+if [ ! -d "$dire" ]
+then
+   mkdir -p "$dire" 
+fi
 
-#cp  -R "HRXCodePlugin.xcplugin" "/Users/""$USER""/Library/Application Support/Developer/Shared/Xcode/Plug-ins/"
-sudo cp -p -R "HRPlugin/Controllers/ProxyHTTPServer.py" "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/"
+sudo cp -p -R "HRXCodePlugin.xcplugin/ProxyHTTPServer.py" "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/"
 
-sudo cp -p -R "HRPlugin/Controllers/baidu_test.py" "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/"
+sudo cp -p -R "HRXCodePlugin.xcplugin/baidu.py" "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/"
+
+cp  -R "HRXCodePlugin.xcplugin" "/Users/""$USER""/Library/Application Support/Developer/Shared/Xcode/Plug-ins/"
+
+
+echo "HRPlugin install successfully!"
