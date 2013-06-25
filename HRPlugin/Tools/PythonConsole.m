@@ -280,7 +280,7 @@ sys.stderr = console\n\
 +(void) GitPull{
     NSString* localUrl = [PythonConsole getGitConfig];
     if(localUrl != nil){
-        NSString* command = [NSString stringWithFormat:@"print(os.popen('cd \"%@\";git pull origin master').read().replace('#', ''))", localUrl];
+        NSString* command = [NSString stringWithFormat:@"print(os.popen('cd \"%@\";git pull origin master;git checkout \"%@\"').read().replace('#', ''))", localUrl, localUrl];
         [PythonConsole showMessage:[PythonConsole RunConsole:command]];
     }
 }
@@ -288,7 +288,7 @@ sys.stderr = console\n\
 +(void) GitStatus{
     NSString* localUrl = [PythonConsole getGitConfig];
     if(localUrl != nil){
-        NSString* command = [NSString stringWithFormat:@"print(os.popen('cd \"%@\";git status \"%@\"').read().replace('#', ''))", localUrl, localUrl];
+        NSString* command = [NSString stringWithFormat:@"print(os.popen('cd \"%@\";git pull origin master;git status \"%@\"').read().replace('#', ''))", localUrl, localUrl];
         
         [PythonConsole showMessage:[PythonConsole RunConsole:command]];
     }
