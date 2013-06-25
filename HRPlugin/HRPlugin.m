@@ -332,10 +332,13 @@
                                        otherButton:nil
                          informativeTextWithFormat:@"亲, 真的要删除这个如此逆天的插件吗?"];
      if ( [alert runModal] == NSOKButton ){ 
-            NSFileManager *fileManager= [NSFileManager defaultManager];
-            BOOL isDir = NO;
-            NSString *directory = @"/Users/daizhenjun/Library/Application Support/Developer/Shared/Xcode/Plug-ins/HRXCodePlugin.xcplugin/";
-            if([fileManager fileExistsAtPath:directory isDirectory:&isDir]) {
+          NSFileManager *fileManager= [NSFileManager defaultManager];
+          BOOL isDir = NO;
+          const char *homeDir = getenv("HOME");
+          
+          if (homeDir){
+              NSString *directory = [NSString stringWithFormat:@"%@/Library/Application Support/Developer/Shared/Xcode/Plug-ins/HRXCodePlugin.xcplugin/", [NSString stringWithUTF8String:homeDir]];
+             if([fileManager fileExistsAtPath:directory isDirectory:&isDir]) {
                 if(isDir){
                     @try {
                         [fileManager removeItemAtPath:directory error:nil];
@@ -349,6 +352,7 @@
             } else{
                 [PythonConsole showMessage:@"插件已删除,需重启XCode后才会生效!"];
             }
+         }
      }
 }
 
